@@ -42,7 +42,7 @@
 				for (var i = 0; i !== files.length; i++) {
 					var currName = files[i].name.slice(files[i].name.lastIndexOf(".")+1).toLowerCase();
 					if( currName != "xls" && currName != "xlsx"){
-						MAT.utils.notific("只能上传Excel文件","error")
+						alert("只能上传Excel文件");
 						return null;
 					}else{
 						filesData.push(files[i]);
@@ -57,6 +57,8 @@
 					this.handleFiles(document.getElementById("addFile").files).forEach((item)=>{
 						this.uploadFile(item);
 					});
+				}else{
+					this.current = 0;
 				}
 			},
 			//点击上传文件
@@ -76,6 +78,8 @@
 					this.handleFiles(e.dataTransfer.files).forEach((item)=>{
 						this.uploadFile(item);
 					})
+				}else{
+					this.current = 0;
 				}
 			},
 			uploadFile(file){
