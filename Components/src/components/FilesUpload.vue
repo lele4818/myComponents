@@ -12,7 +12,7 @@
 					<a @click="chooseFiles" style="text-decoration: underline;">选择文件上传</a>
 					<span>或者拖拽上传</span>
 					<div class="tipsDiv">
-						<p class="tips">仅支持Excel文件</p>
+						<p class="tips">仅支持Excel文件 / Tip：文件类型限制根据实际需求更改源代码 这里以Excel为例</p>
 					</div>
 				</div>
 				<input id="addFile" type="file" multiple="multiple" style="display: none"
