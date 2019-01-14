@@ -89,7 +89,7 @@
 				};
 				this.files.push(item);
 				var filesData = new FormData();
-				filesData.append('file',filesData);
+				filesData.append('file',file);
 				
 			/* 调用接口代码写在下面
 				... 
